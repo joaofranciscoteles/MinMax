@@ -47,9 +47,7 @@ O terceiro algoritmo reduz a quantidade de comparações necessárias para encon
 </p>
 
 # Cálculo do Tempo
-Para medição do tempo de execução foi utilizado a biblioteca chronos. Através dessa biblioteca pode-se medir o tempo em diferentes medidas(s,ns,ms) e com isso o tempo foi medido em ms para maior precisão dos resultados. Além disso, mediu-se o tempo 10x e fez uma média dos tempos para maior confiabilidade do resultado.
-
-# Resultados Esperados
+<p>Para medição do tempo de execução foi utilizado a biblioteca chronos. Através dessa biblioteca pode-se medir o tempo em diferentes medidas(s,ns,ms) e com isso o tempo foi medido em ms para maior precisão dos resultados. Além disso, mediu-se o tempo 10x e fez uma média dos tempos para maior confiabilidade do resultado.</p>
 
 # Resultados obtidos
 
