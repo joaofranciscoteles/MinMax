@@ -51,4 +51,67 @@ O terceiro algoritmo reduz a quantidade de comparações necessárias para encon
 
 # Resultados obtidos
 
+<p>Os resultados obtidos foram computados em tabelas e também utilizou-se do gnuplot para criação de gráficos, visando uma análise detalhada e prática das funções.
+<div align=center>
+<p style="display: flex; justify-content: center;">
+  <img src="tabelas/1000.png" width="290" />
+  <img src="tabelas/10000.png" width="290" /> 
+</p>
+<p  align="center">
+Tabela com as médias dos vetores de tamanhos 1000 e 10000
+</p>
+
+ <p style="display: flex; justify-content: center;">
+  <img src="tabelas/100000.png" width="290" />
+  <img src="tabelas/500000.png" width="290" /> 
+</p>
+<div align=center>
+<img src="dataset/outputMinMax1.png" width="650px">
+</div>
+<p  align="center">
+Gráfico MinMax1
+</p>
+<div align=center>
+<img src="dataset/outputMinMax2.png" width="650px">
+</div>
+<p  align="center">
+Gráfico MinMax2
+</p>
+<div align=center>
+<img src="dataset/outputMinMax3.png" width="650px">
+</div>
+<p  align="center">
+Gráfico MinMax3
+</p>
+</div>
+</p>
+
 # Conclusão
+<p>
+Os dados do Minmax 1 mostraram que o tipo de vetor(aleatório,crescente e decrescente) não otimizou o tempo da função, aliás quando ordenados, na maioria dos casos a média do tempo de execução foi maior em comparação aos aleatórios. Assim como no MinMax1, o tipo de vetor no MinMax2 não alterou significamente o tempo de execução, apresentando até mesmo resultados maiores em vetores ordenados. Ao contrário do Minmax 1, ao aumentar o tamanho dos vetores no MinMax3, aqueles que eram ordenados crescente ou decrescentemente apresentaram um tempo menor, aliás, quanto maior o tamanho do vetor maior são as discrepâncias nas médias dos tempos de execução entre vetores aleatórios e ordenados. Isso demonstrou uma maior eficiência da função quando a entrada apresentar dados ordenados. 
+</p>
+<p>
+Comparando as três funções(MinMax 1,2 e 3), o MinMax 3 foi o que apresentou maior eficiência quando os vetores eram ordenados, em comparação ao MinMax 1 e 2. Entretanto, quando os vetores eram aleatórios,quanto maior o tamanho do vetor maior era o tempo médio de execução do MinMax3, em comparação ao MinMax 1 e 2, demonstrando que essa função não é ideal para casos em que as entradas de dados não estão ordenados.
+</p>
+<p>
+Com base nos resultados obtidos ao analisar as funções MinMax1, MinMax2 e MinMax3, pode-se concluir que cada uma delas apresenta diferentes níveis de eficiência dependendo das características dos dados de entrada.Enquanto MinMax1 e MinMax2 podem ser mais adequados para situações onde a ordem dos elementos no vetor não é relevante, MinMax3 destaca-se quando se espera que os dados estejam ordenados, proporcionando um tempo de execução mais rápido nessas condições.
+</p>
+
+
+# Ambiente de Execução
+ - Processador: Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz (até 4.20GHz)
+ - Placa de Vídeo: Intel Corporation CometLake-U GT2 [UHD Graphics]
+ - Memória RAM: 8GB
+ - Placa Mãe: Não especificado
+ - Disco: KINGSTON RBUSNS8154P3256GJ1 (NVMe SSD)
+ - Sistema Operacional: Linux Ubuntu
+# Compilação e Execução
+
+Um arquivo Makefile que realiza todo o procedimento de compilação e execução está disponível no código. Para utilizá-lo, siga as diretrizes de execução no terminal:
+
+
+| Comando                |  Função                                                                                           |                     
+| -----------------------| ------------------------------------------------------------------------------------------------- |
+|  `make clean`          | Apaga a última compilação realizada contida na pasta build                                        |
+|  `make`                | Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build           |
+|  `make run`            | Executa o programa da pasta build após a realização da compilação       
